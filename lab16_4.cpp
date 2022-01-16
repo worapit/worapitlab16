@@ -17,3 +17,21 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &t,int &w,int &e,int &r){
+	int data[4] = {50,100,500,1000};
+	t = data[rand()%4];
+	w = data[rand()%4];
+	while(t == w){
+		w = data[rand()%4];
+	}
+	e = data[rand()%4];
+	while(e == t or e == w){
+		e = data[rand()%4];
+	}
+	r = data[rand()%4];
+	while(r == t or r == w or r == e){
+		r = data[rand()%4];
+	}
+	
+}
