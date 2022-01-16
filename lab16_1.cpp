@@ -3,10 +3,10 @@ using namespace std;
 
 int main(){
     int a =5;
-    string b = "A" ;
-    string &c = b;
+    const char *b = "A" ;
+    const char *&c = b;
     int *x = &a;
-    string *y = &b;
+    const char **y = &b;
     int **z = &x;
     cout << a << " " << b << " " << c << " " << x << " "  << y << " " << z << "\n";
 	cout << &a << " " << &b << " " << &c << " " << &x << " "  << &y << " " << &z << "\n";
@@ -25,3 +25,4 @@ int main(){
 	
 	return 0;
 }
+
